@@ -1,8 +1,16 @@
 {
   "name": "TruckApp",
+  "description": "The TrucApps's official website",
+  "author": "Václav Uruba <uruba@outlook.com>",
   "version": "0.0.1",
   "devDependencies": {
+    "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
-    "gulp-slim": "^0.3.0"
+    "gulp-slim": "^0.3.0",
+    "gulp-stylus": "^2.3.1",
+    "jeet": "^6.1.2",
+    "nib": "^1.1.0",
+    "rupture": "^0.6.1",
+    "stylus": "^0.54.2"
   }
 }

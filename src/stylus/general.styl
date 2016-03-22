@@ -1,0 +1,112 @@
+html
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  
+body
+  color: color_text_main
+
+header
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+  color: white 
+  background: rgba(255,153,0,1)
+  background: -moz-linear-gradient(top, rgba(255,153,0,1) 0%, rgba(245,123,0,1) 100%)
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,153,0,1)), color-stop(100%, rgba(245,123,0,1)))
+  background: -webkit-linear-gradient(top, rgba(255,153,0,1) 0%, rgba(245,123,0,1) 100%)
+  background: -o-linear-gradient(top, rgba(255,153,0,1) 0%, rgba(245,123,0,1) 100%)
+  background: -ms-linear-gradient(top, rgba(255,153,0,1) 0%, rgba(245,123,0,1) 100%)
+  background: linear-gradient(to bottom, rgba(255,153,0,1) 0%, rgba(245,123,0,1) 100%)
+  
+  +below(breakpoint_small)
+    height: auto
+    padding: 3rem 0
+
+  h1
+    position: absolute
+    top: 50%
+    right: 50%
+    font-size: 4.5rem
+    font-weight: 300
+    -webkit-transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
+    transform: translateY(-50%)
+    border-right: solid 2px white
+    padding: 0 0.625rem 0.625rem 0
+    
+    span
+      display: block;
+      margin-top: 0.625rem
+      padding-right: 0.3125rem
+      font-size: 1.3rem
+      text-align: right
+      
+      +below(breakpoint_small)
+        text-align: center
+      
+    +below(breakpoint_small)
+      border: none
+      position: static
+      text-align: center
+      -webkit-transform: none
+      -moz-transform: none
+      transform: none
+
+section, header .container
+  center(full-width)
+  
+footer
+  background: color_text_secondary
+  padding: 1.5rem 0
+  
+  a 
+    text-decoration: underline dotted color_text_main
+
+section, footer
+  text-align: center
+  margin-top: 4rem
+    
+h2
+  font-size: 2rem
+  margin-bottom: 1.25rem
+  
+  &:before
+    display: block
+    content: " "
+    width: 3.75rem
+    height: 2px
+    border-bottom: solid 2px color_primary
+    margin: 0 auto 0.5rem
+    
+  +below(breakpoint_small)
+    padding: 0 1.5rem
+
+h3
+  font-size: 1.25rem
+  color: color_text_main
+  font-weight: 400
+  text-transform: uppercase
+  
+p
+  line-height: 1.625
+  margin-bottom: 1rem
+  color: color_text_secondary
+  padding: 0 10rem
+  
+  &:last-of-type
+    margin-bottom: 0
+    
+  +below(breakpoint_small)
+    padding: 0 1.5rem
+  
+a
+  color: color_text_main
+  font-weight: 400
+  text-decoration: underline dotted color_text_secondary
+  
+hr
+  margin: 2rem 0
+  color: color_gray_light
+  background-color: color_gray_light
+  height: 1px
+  border: 0

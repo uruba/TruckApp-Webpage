@@ -1,0 +1,139 @@
+doctype html
+head
+  title TruckApp – stay informed on the road
+  link href="css/main.css" rel="stylesheet" type="text/css"
+  link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Open+Sans:400,300,300italic" rel="stylesheet" type="text/css"
+  script type="text/javascript" src="js/smooth-scroll.min.js"
+body
+  header
+    .container
+      h1 
+        | <b>Truck</b>App
+        span A TruckersMP companion app
+      
+      a.logo_small data-scroll="" href="#flavour"
+        
+      .phone
+        a.logo data-scroll="" href="#flavour"
+             
+  section
+    h2 <b>The power</b> under the bonnet.
+    
+    p 
+      i Fancy a listen to the graceful throbbing of the V8&#39;s pistons?
+      <br />
+      | Well, we can&#39;t offer you <i>that</i> in our app, but <b>here&#39;s what you may find handy</b> on your virtual trips across Europe:
+    
+    .container.features
+      .one-third.feature
+        .upper_half
+          h3 Server list
+          p A cursory look will reveal how many players are currently online on the game's servers.
+        .lower_half
+          .img_container
+            img src="images/server_list.png"
+      .one-third.feature
+        .upper_half
+          h3 Meetup list
+          p Take part in player convoys – see where and when they take place & RSVP in a few taps.
+        .lower_half
+          .img_container
+            img src="images/meetup_list.png"
+      .one-third.feature
+        .upper_half
+          h3 Meetup reminders
+          p You'll never forget to show up at a convoy – just let your phone remind you. Easy, innit?
+        .lower_half
+          .img_container
+            img src="images/meetup_reminders.png"
+      
+    p 
+      | Not quite enough? We agree!
+      <br />
+      b Since this is an early alpha version, new features are being added as we go.
+      
+    p
+      | We have many exciting ideas for the app and we&#39;re waiting for yours, too! 
+      a href="#upcoming" 
+        | Take a look at what&#39;s up and coming.
+        
+  section id="flavour"
+    h2 Choose your <b>flavour</b>!
+    
+    p
+      i Petrol or diesel? That's always the question.
+      <br />
+      | To cater your preference, our app comes in two variants – 
+      b Android
+      |  and 
+      b Windows 10 Mobile
+      | .
+      <br />
+      span.weaker 
+        | (no iOS support at the moment, unfortunately)
+        
+    .badges
+      a.badge_gp href="https://play.google.com/store/apps/details?id=cz.uruba.ets2mpcompanion&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+        img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" style="height: 52px;"
+    
+      a.badge_ws href="https://www.microsoft.com/store/apps/9nblggh4qsf0?ocid=badge"
+        img src="https://assets.windowsphone.com/d86ab9b4-2f3d-4a94-92f8-1598073e7343/English_Get_it_Win_10_InvariantCulture_Default.png" srcset="https://assets.windowsphone.com/5d2bd562-d242-4538-85f4-857d6457404b/English_Get_it_Win_10_InvariantCulture_Default.png 2x"  alt="Get it on Windows 10"
+    
+  section
+    h2 <b>Inner workings</b> exposed.
+    
+    p
+      | The application is entirely open-sourced, so <b>you can check its innards through and through</b>.
+    
+    p style="margin-bottom: 2rem;"
+      a href="https://github.com/uruba/TruckApp"
+        | Check it out @ GitHub
+      
+    p
+      | Not only that! Thanks to the ultra-permissive UNLICENSE, you can do whatever you please with the source code*.
+      <br />
+      | And you're free to make the app different/better in any way you can. <i>Will you take up on the opportunity?</i>
+    
+    <br />
+    
+    p
+      | * 
+      span.weaker
+        | Absolutely no strings attached. For real.
+    
+  section
+    h2 End of the road? <b>Hardly</b>.
+    
+    p
+      | Right to the contrary, in fact. We've all but <b>just set off on our journey</b> to make this app a useful companion for TruckersMP players.
+    
+    p
+      | <a href="#upcoming">Join us on our way</a> and let's work together to make this app a worthy tool that everyone of us wants it to be.
+      
+  footer 2016 – <a href="mailto:uruba@outlook.com">Václav</a> @ TruckApp wishes you a safe journey
+  
+  #upcoming
+    .dialog
+      .dialog_content_wrapper   
+        a.button_close href="#close" ×
+      
+        h3 Upcoming features (as of 3/2016)
+        
+        ul  
+          li
+            h4 Trip logger      
+            p
+              | This feature will enable you to easily <b>record your trips</b> and basic data pertaining to them.
+            p
+              | Later there will also come <b>awesome backend features</b> with a publicly specified API so that it can be hooked up to third-party applications (think VTC management systems, etc.)
+              
+        <hr />
+        
+        p.center If you have any suggestion of your own, you can send it to <a href="mailto:uruba@outlook.com">uruba@outlook.com</a> <b>right away</b>!
+        
+        .close_small
+          <hr style="margin-bottom: 0.75rem;" />
+          a href="#close" × Close
+  
+  javascript:
+    smoothScroll.init();
