@@ -8,6 +8,10 @@
     
 .center
   text-align: center
+  
+.small_no_margin
+  +below(breakpoint_small)
+    margin: 0
 
 .feature
   -webkit-box-shadow: 0px 0px 6px 0px rgba(222,222,222,1);
@@ -75,7 +79,7 @@ a.logo_small
     position: absolute
     top: 94px
     left: 24px
-    background: url(../images/arrow.svg)
+    background: url(../images/arrow.svg) no-repeat
   
   &:after
     display: block
@@ -106,7 +110,7 @@ a.logo_small
     top: 136px
     width: 128px
     height: 128px
-    background: url(../images/logo.svg)
+    background: url(../images/logo.svg) no-repeat
     text-decoration: none
     
     &:before
@@ -117,7 +121,7 @@ a.logo_small
       position: absolute
       top: 126px
       left: 92px
-      background: url(../images/arrow.svg)
+      background: url(../images/arrow.svg) no-repeat
     
     &:after
       display: block
@@ -191,6 +195,7 @@ a.logo_small
     
     +below(breakpoint_small)
       padding: 1rem
+      height: 100%
     
     .dialog_content_wrapper
       +below(breakpoint_small)
