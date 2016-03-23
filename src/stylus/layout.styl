@@ -160,9 +160,9 @@ a.logo_small
     
     img
       opacity: 1
-      -webkit-transition: opacity 0.3s ease-in-out;
-      -moz-transition: opacity 0.3s ease-in-out;
-      transition: opacity 0.3s ease-in-out;
+      -webkit-transition: opacity 0.3s ease-in-out
+      -moz-transition: opacity 0.3s ease-in-out
+      transition: opacity 0.3s ease-in-out
       
       &:hover
         opacity: 1
@@ -223,8 +223,9 @@ a.logo_small
       +below(breakpoint_small)
         padding: 5%
     
-    h3
-      margin-bottom: 1rem
+    .list_updated
+      padding: 0.25rem 0 1rem
+      font-style: italic
       
     h4
       font-weight: 400
@@ -259,6 +260,9 @@ a.logo_small
       
       +below(breakpoint_small)
         display: block
+        
+      hr
+        margin-bottom: 1.25rem
         
       a
         color: color_primary_dark
