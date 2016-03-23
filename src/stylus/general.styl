@@ -52,6 +52,7 @@ header
       -webkit-transform: none
       -moz-transform: none
       transform: none
+      padding-right: 0
       
     +below(breakpoint_super_small)
       font-size: 3rem
@@ -63,7 +64,8 @@ footer
   background: color_text_secondary
   padding: 1.5rem 0
   
-  a 
+  a
+    color: color_text_main 
     text-decoration: underline dotted color_text_main
     
     +below(breakpoint_small)
@@ -76,10 +78,10 @@ footer
 
 section, footer
   text-align: center
-  margin-top: 5.5rem
+  padding: 2.7rem 0
   
-section:first-of-type
-  margin-top: 3rem
+section:last-of-type
+  padding-bottom: 5.4rem
     
 h2
   font-size: 2rem
@@ -115,9 +117,9 @@ p
     padding: 0 1.5rem
   
 a
-  color: color_text_main
+  color: color_primary_dark
   font-weight: 400
-  text-decoration: underline dotted color_text_secondary
+  text-decoration: underline dotted color_primary_dark
   
 hr
   margin: 2rem 0
