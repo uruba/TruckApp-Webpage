@@ -205,10 +205,19 @@ a.logo_small
     -moz-transform: translateX(-50%) translateY(-50%)
     transform: translateX(-50%) translateY(-50%)
     padding: 2rem
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
     
     +below(breakpoint_small)
       padding: 1rem
-      height: 100%
+      min-height: 100%
+      max-width: none
+      top: 0
+      left: 0
+      -webkit-transform: none
+      -moz-transform: none
+      transform: none
     
     .dialog_content_wrapper
       +below(breakpoint_small)
