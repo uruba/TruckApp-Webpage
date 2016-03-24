@@ -22,7 +22,7 @@ gulp.task('browser-sync', function() {
 gulp.task("slim", function(){
 gulp.src(paths.src.concat("slim/*.slim"))
   .pipe(slim({
-    pretty: true
+    pretty: false
   }))
   .pipe(gulp.dest(paths.dist));
 });
@@ -31,7 +31,8 @@ gulp.task("stylus", function() {
   gulp.src(paths.src.concat("stylus/main.styl"))
   .pipe(stylus({
     paths: ['node_modules'],
-    import: ['jeet/stylus/jeet', 'rupture/rupture', 'nib']
+    import: ['jeet/stylus/jeet', 'rupture/rupture', 'nib'],
+    compress: true
   }))
   .pipe(gulp.dest(paths.dist.concat("css/")));
 });
