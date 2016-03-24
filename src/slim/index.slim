@@ -5,6 +5,7 @@ head
   link href="css/main.css" rel="stylesheet" type="text/css"
   link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Open+Sans:400,300,300italic" rel="stylesheet" type="text/css"
   script type="text/javascript" src="js/smooth-scroll.min.js"
+  script type="text/javascript" src="js/aload.min.js"
 body
   header
     .container
@@ -32,21 +33,21 @@ body
           p A cursory look will reveal how many players are currently online on the game's servers.
         .lower_half
           .img_container
-            img src="images/server_list.png"
+            img data-aload="images/server_list.png"
       .one-third.feature
         .upper_half
           h3 Meetup list
           p Take part in player convoys – see where and when they take place & RSVP in a few taps.
         .lower_half
           .img_container
-            img src="images/meetup_list.png"
+            img data-aload="images/meetup_list.png"
       .one-third.feature
         .upper_half
           h3 Meetup reminders
           p You'll never forget to show up at a convoy – just let your phone remind you. Easy, innit?
         .lower_half
           .img_container
-            img src="images/meetup_reminders.png"
+            img data-aload="images/meetup_reminders.png"
       
     p 
       | Not quite enough? We agree!
@@ -141,3 +142,4 @@ body
   
   javascript:
     smoothScroll.init();
+    aload();
