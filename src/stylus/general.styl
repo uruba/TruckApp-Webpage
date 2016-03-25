@@ -21,21 +21,25 @@ header
     position: absolute
     top: 50%
     right: 50%
-    font-size: 4.5rem
-    font-weight: 300
     transform: translateY(-50%)
     border-right: solid 2px white
     padding: 0 0.625rem 0.625rem 0
     
-    span
-      display: block;
-      margin-top: 0.625rem
-      padding-right: 0.3125rem
-      font-size: 1.3rem
-      text-align: right
+    a
+      font-size: 4.5rem
+      font-weight: 300
+      color: white
+      text-decoration: none
       
-      +below(breakpoint_small)
-        text-align: center
+      span
+        display: block;
+        margin-top: 0.625rem
+        padding-right: 0.3125rem
+        font-size: 1.3rem
+        text-align: right
+      
+        +below(breakpoint_small)
+          text-align: center
       
     +below(breakpoint_small)
       border: none
