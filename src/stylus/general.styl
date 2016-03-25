@@ -25,11 +25,21 @@ header
     border-right: solid 2px white
     padding: 0 0.625rem 0.625rem 0
     
+    +below(breakpoint_small)
+      border: none
+      position: static
+      text-align: center
+      transform: none
+      padding-right: 0
+    
     a
       font-size: 4.5rem
       font-weight: 300
       color: white
       text-decoration: none
+      
+      +below(breakpoint_super_small)
+        font-size: 3rem
       
       span
         display: block;
@@ -41,16 +51,6 @@ header
         +below(breakpoint_small)
           text-align: center
           padding-right: 0
-      
-    +below(breakpoint_small)
-      border: none
-      position: static
-      text-align: center
-      transform: none
-      padding-right: 0
-      
-    +below(breakpoint_super_small)
-      font-size: 3rem
 
 section, header .container
   center(full-width)
