@@ -38,8 +38,13 @@ gulp.task("stylus", function() {
 });
 
 gulp.task("images", function() {
-  gulp.src(paths.src.concat("img/*.{jpg, png}"))
+  gulp.src(paths.src.concat("img/*.{jpg,png}"))
   .pipe(gulp.dest(paths.dist.concat("images/")));
+});
+
+gulp.task("favicon", function() {
+  gulp.src(paths.src.concat("favicon/*.{ico,json,png,svg,xml}"))
+  .pipe(gulp.dest(paths.dist));
 });
 
 gulp.task("watch", function() {
