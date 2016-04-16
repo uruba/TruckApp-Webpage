@@ -57,4 +57,4 @@ gulp.task("watch", function() {
   gulp.watch(paths.src.concat("stylus/*.styl"), ["stylus"]);
 });
 
-gulp.task("default", ["slim", "stylus", "browser-sync", "watch"]);
+gulp.task("default", ["slim", "stylus", "images", "scripts", "favicon", "browser-sync", "watch"]);
