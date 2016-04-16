@@ -42,6 +42,11 @@ gulp.task("images", function() {
   .pipe(gulp.dest(paths.dist.concat("images/")));
 });
 
+gulp.task("scripts", function() {
+  gulp.src(paths.src.concat("js/*.{js, min.js}"))
+  .pipe(gulp.dest(paths.dist.concat("js/")));
+});
+
 gulp.task("favicon", function() {
   gulp.src(paths.src.concat("favicon/*.{ico,json,png,svg,xml}"))
   .pipe(gulp.dest(paths.dist));
