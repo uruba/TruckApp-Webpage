@@ -38,7 +38,7 @@ gulp.task("stylus", function() {
 });
 
 gulp.task("images", function() {
-  gulp.src(paths.src.concat("img/*.{jpg,png}"))
+  gulp.src(paths.src.concat("img/*.{jpg,png,svg}"))
   .pipe(gulp.dest(paths.dist.concat("images/")));
 });
 
