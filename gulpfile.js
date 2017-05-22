@@ -16,7 +16,7 @@ gulp.task('browser-sync', function() {
       }
   });
   
-    gulp.watch(paths.dist.concat("**/*")).on('change', browserSync.reload);
+  gulp.watch(paths.dist.concat("**/*")).on('change', browserSync.reload);
 });
 
 gulp.task("slim", function(){
